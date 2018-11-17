@@ -7,19 +7,17 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="إطمئنان"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
-        <activity android:name=".ui.MainActivity">
+        <activity android:name=".Homepage">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity android:name=".ui.AddEditAlarmActivity" />
-
         <activity
             android:name=".ui.AlarmLandingPageActivity"
             android:theme="@style/AlertLandingPageTheme" />
@@ -27,9 +25,10 @@
         <service android:name=".service.LoadAlarmsService" />
 
         <receiver android:name=".service.LoadAlarmsReceiver" />
-
         <receiver android:name=".service.AlarmReceiver" />
 
+        <activity android:name=".ui.MainActivity" />
+        <activity android:name=".Faces"></activity>
     </application>
 
 </manifest>
